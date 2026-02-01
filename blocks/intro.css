@@ -1,0 +1,70 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  width: 830px;
+  min-height: 607px;
+  margin-top: 92px;
+  align-self: flex-start;
+}
+
+.intro__title {
+  margin: 0;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 1.07;
+  text-align: left;
+}
+
+.intro__quote {
+  margin: 39.98px 0 0;
+  width: 738px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.41;
+}
+
+.intro__author {
+  margin: 10px 0 0;
+  width: 732px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.41;
+  text-align: right;
+}
+
+.intro__description {
+  margin: 31.99px 0 0;
+  width: 722px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.63;
+}
+
+@media screen and (max-width: 1024px) {
+  .intro {
+    width: 720px;
+    margin-top: 90px;
+    align-self: center;
+  }
+
+  .intro__title {
+    width: 707px;
+    font-size: 45px;
+    line-height: 1.08;
+  }
+
+  .intro__quote {
+    margin-top: 50px;
+    width: 720px;
+  }
+
+  .intro__author {
+    margin-top: 0;
+    width: 720px;
+  }
+
+  .intro__description {
+    margin-top: 32px;
+    width: 720px;
+  }
+}
