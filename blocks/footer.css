@@ -19,3 +19,13 @@ footer {
     padding: 88px 0 24px;
   }
 }
+
+@media screen and (max-width: 544px) {
+  .footer {
+    padding: 64px 0 24px; /* 64px arriba y 24px abajo */
+  }
+
+  .footer__copyright {
+    font-size: 14px; /* Bajamos de 16px a 14px */
+  }
+}
