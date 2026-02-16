@@ -34,6 +34,7 @@
   width: 984px;
   height: 615px;
   object-fit: cover;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.50);
 }
 
 @media screen and (max-width: 1024px) {
