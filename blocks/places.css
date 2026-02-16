@@ -4,12 +4,12 @@
   gap: 80px;
   max-width: 984px;
   margin: 0 auto;
-  padding-top: 92px;
+  padding-top: 88px;
 }
 
 .places__item {
   display: grid;
-  grid-template-columns: 460px 1fr; 
+  grid-template-columns: 460px 1fr;
   grid-template-rows: auto auto auto;
   gap: 48px 37px;
   grid-template-areas:
@@ -29,7 +29,7 @@
 
 .places__website {
   grid-area: website;
-  align-self: end; 
+  align-self: end;
   justify-self: start;
 }
 
@@ -44,7 +44,7 @@
 .places__text {
   grid-area: text;
   font-family: 'Inter', Arial, sans-serif;
-  line-height: 1.63; 
+  line-height: 1.63;
 }
 
 .places__button {
@@ -54,7 +54,7 @@
   font-family: 'Inter', Arial, sans-serif;
   font-size: 18px;
   font-weight: 600;
-  line-height: normal;  
+  line-height: normal;
   color: #FFFFFF;
   background-image: linear-gradient(to right,#0278FE, #003A7B);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
@@ -66,8 +66,8 @@
   margin: 0 0 8px 0;
   font-family: 'Inter', Arial, sans-serif;
   font-size: 12px;
-  line-height: normal; 
-  letter-spacing: 1.44px; 
+  line-height: normal;
+  letter-spacing: 1.44px;
   color: #AAAAAA;
   text-transform: uppercase;
 }
@@ -99,10 +99,11 @@
 @media screen and (max-width: 1024px) {
 .places {
   max-width: 720px;
+  gap: 72px;
 }
   .places__item {
   grid-template-rows: auto 340px auto;
-  grid-template-columns: 340px 1fr; 
+  grid-template-columns: 340px 1fr;
   gap: 48px 28px;
 }
 
@@ -110,29 +111,33 @@
   max-width: 340px;
   max-height: 340px;
 }
-  
+
 .places__title {
   font-size: 42px;
   line-height: 1.1;
 }
 .places__paragraph {
   font-size: 16px;
-} 
+}
 }
 
 @media screen and (max-width: 544px){
   .places {
   max-width: 100%;
+  padding-top: 62px;
+  gap: 50px;
 }
   .places__item {
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     grid-template-areas:
       "title"
       "website"
       "image"
       "text"
       "button";
+    grid-template-rows: repeat(5, min-content);
   gap: 30px 0;
+
 }
 
 .places__image {
@@ -141,10 +146,11 @@
   object-fit: cover;
   justify-self: center;
 }
-  
+
 .places__title {
   font-size: 32px;
   line-height: 1.09;
+  padding: 0 16px;
 }
 
 .places__website {
@@ -157,7 +163,7 @@
   padding: 0 16px;
 }
 .places__button {
-    width: calc(100% - 32px); 
+    width: calc(100% - 32px);
     margin: 0 auto;
     font-size: 14px;
   }
