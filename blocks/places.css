@@ -44,7 +44,6 @@
 .places__text {
   grid-area: text;
   font-family: 'Inter', Arial, sans-serif;
-  font-size: 128px;
   line-height: 1.63; 
 }
 
@@ -54,6 +53,7 @@
   border: none;
   font-family: 'Inter', Arial, sans-serif;
   font-size: 18px;
+  font-weight: 600;
   line-height: normal;  
   color: #FFFFFF;
   background-image: linear-gradient(to right,#0278FE, #003A7B);
@@ -81,7 +81,6 @@
 .places__paragraph {
   margin: 0;
   font-size: 18px;
-  line-height: 1.63;
   font-weight: 400;
 }
 
@@ -95,4 +94,28 @@
 
 .places__image:hover {
   opacity: 0.75;
+}
+
+@media screen and (max-width: 1024px) {
+.places {
+  max-width: 720px;
+}
+  .places__item {
+  grid-template-rows: auto 340px auto;
+  grid-template-columns: 340px 1fr; 
+  gap: 48px 28px;
+}
+
+.places__image {
+  max-width: 340px;
+  max-height: 340px;
+}
+  
+.places__title {
+  font-size: 42px;
+  line-height: 1.1;
+}
+.places__paragraph {
+  font-size: 16px;
+} 
 }
