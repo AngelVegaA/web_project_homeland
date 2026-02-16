@@ -8,7 +8,7 @@
 
 .intro__content{
  display: flex;
-  width: 830px;
+  max-width: 830px;
  flex-direction: column;
  margin: 0 auto;
 }
